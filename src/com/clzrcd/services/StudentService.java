@@ -18,4 +18,5 @@ public interface StudentService {
     List<StudentModel> getDeletedStudents();
 
 
+    List<StudentModel> getStudentsBy(String searchBy, String searchText);
 }

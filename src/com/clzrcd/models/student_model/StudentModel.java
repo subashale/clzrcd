@@ -4,7 +4,6 @@ public class StudentModel {
 
     private int id;
     private String firstName;
-
     private String middleName;
     private String lastName;
     private String dob;
@@ -18,7 +17,7 @@ public class StudentModel {
     private String privateEmailId;
     private String country;
     private String uniEmailId;
-    private String rollNo;
+    private int rollNo;
     private String profileImgLoc;
     private String modifyDate;
 
@@ -42,9 +41,9 @@ public class StudentModel {
 
     public void setDob(String dob) { this.dob = dob; }
 
-    public String getRollNo() { return rollNo; }
+    public int getRollNo() { return rollNo; }
+    public void setRollNo(int rollNo) { this.rollNo = rollNo; }
 
-    public void setRollNo(String rollNo) { this.rollNo = rollNo; }
 
     public String getFaculty() { return faculty; }
 
@@ -52,7 +51,7 @@ public class StudentModel {
 
     public String getEnrollSeason() { return enrollSeason; }
 
-    public void setEnrollSeason(String enrollDate) { this.enrollSeason = enrollSeason; }
+    public void setEnrollSeason(String enrollSeason) { this.enrollSeason = enrollSeason; }
 
     public String getGender() { return gender; }
 

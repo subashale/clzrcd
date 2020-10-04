@@ -6,9 +6,9 @@ import java.io.File;
 public class ImageExtensionFilter extends FileFilter {
         public final static String JPEG = "jpeg";
         public final static String JPG = "jpg";
-        public final static String GIF = "gif";
-        public final static String TIFF = "tiff";
-        public final static String TIF = "tif";
+//        public final static String GIF = "gif";
+//        public final static String TIFF = "tiff";
+//        public final static String TIF = "tif";
         public final static String PNG = "png";
 
         @Override
@@ -19,10 +19,11 @@ public class ImageExtensionFilter extends FileFilter {
 
             String extension = getExtension(f);
             if (extension != null) {
-                if (extension.equals(TIFF) ||
-                        extension.equals(TIF) ||
-                        extension.equals(GIF) ||
-                        extension.equals(JPEG) ||
+                if (
+//                        extension.equals(TIFF) ||
+//                        extension.equals(TIF) ||
+//                        extension.equals(GIF) ||
+//                        extension.equals(JPEG) ||
                         extension.equals(JPG) ||
                         extension.equals(PNG)) {
                     return true;
