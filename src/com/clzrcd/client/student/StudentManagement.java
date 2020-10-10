@@ -522,7 +522,9 @@ public class StudentManagement {
 //                            ImageIcon imageIcon = new ImageIcon(image);
 
                             File sourceFile = new File(selectedProfileImage.getAbsolutePath());
-                            String imageLoc = "C:\\Users\\subash\\Desktop".concat("\\img\\"+student.getUniEmailId().split("@")[0]+"\\");
+                            String imageLoc = "C:\\Users\\subash\\Desktop".concat("\\img\\");
+                            imageLoc += student.getUniEmailId().split("@")[0]+"\\";
+//                            String imageLoc = "C:\\Users\\subash\\Desktop".concat("\\img\\"+student.getUniEmailId().split("@")[0]+"\\");
 //                            String imageLoc = System.getProperty("user.dir").concat("\\img\\"+student.getUniEmailId().split("@")[0]+"\\");
 
                             if (!new File(imageLoc).exists()) {
@@ -763,6 +765,7 @@ public class StudentManagement {
                 rollNoTxt.setText("");
                 imageLbl.setText("Upload image");
                 imageLbl.setIcon(null);
+                doubleClickActive = false;
             }
         });
     }
